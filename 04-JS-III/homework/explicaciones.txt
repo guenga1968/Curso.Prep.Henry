@@ -1,0 +1,2 @@
+Array es una coleccion de datos que se pueden ordenar, buscar y agrupar. Es como una caja donde puedo poner cosas, 
+hasta puedo poner otra caja (otro Array), objetos (variables),e incluso recetas (funciones).
