@@ -1,0 +1,10 @@
+for es un bucle. un bucle sirve para realizar tareas repetidas. por ejemplo escribir diez veces "hola mundo", utilizo la sentencia 
+for. Pero a la sentencia hay que indicarle desde donde comienza en este caso 1 hasta donde '10' y en cuanto se incrementara el valor
+cada vuelta .
+se escribe for(-inicio- ; -fin- ; intervalo)
+for(var i = 1; i <=10; i++)
+
+operadores lógicos permiten continuar con la ejecucion del programa si se cumplen las condiciones determinadas en el operador.
+por ej && que significa y. ejecutara la sentencia del programa cuando se cumpla la primera y la segunda condición.
+operador || significa "o". ejecutra la senetencia del programa cuando alguna de las condiciones establecidas se cumpla.
+y el operador ! "not". ejecutara la sentencia cuando sea lo opuesto a la condición establecida.
