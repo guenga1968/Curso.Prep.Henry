@@ -1,0 +1,31 @@
+
+
+
+
+* Objetos los objetos en javascript se comportan como los objetos en la vida real por ejemplo un vaso es un objeto
+esos objetos tienes sus propias características, tamaño ,color, material, peso, etc.
+las propiedades son características de un objeto, y los métodos son las acciones que puede realizar un objeto.
+por ejemplo el objeto auto tiene propiedades como color, tamaño, peso, etc. y también tiene métodos como
+arrancar, acelerar, frenar, etc.
+los metodos son las acciones que puede realizar un objeto, y las propiedades son las características de un objeto.
+
+
+	* Bucle `for…in` el bucle for…in es un bucle que nos permite recorrer todas las propiedades de un objeto.
+	en el objeto persona tenemos las propiedades nombre, apellido, edad, etc. for…in nos permite recorrer todas
+	las propiedades del objeto.
+	la construccion es: for (propiedad in objeto) {
+		//codigo
+		propiedad es la propiedad que estamos recorriendo
+		objeto es el objeto que estamos recorriendo
+	
+		en este caso  podemos conocer que propiedades tiente el objeto y sus valores 
+		las propiedades las obtenemos con la variable propiedad y los valores de esas propiedades haciendo mención
+		al objeto y la propiedad objeto[propiedad].
+		
+	}
+
+
+	* Notación de puntos vs notación de corchetes nos permiten acceder a las propiedades y métodos de los objetos.
+	en la notación por corchetes podemos acceder a las propiedades y métodos de un objeto llamando a una variable, cosa 
+	que no puede hacerse en la notación por puntos.
+	
