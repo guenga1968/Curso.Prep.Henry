@@ -1,0 +1,18 @@
+Prototype : la creación de clases consume memoria y si cada uno de los objetos que creamos le tenemos que agregar
+un método que se va a repetir en todos los objetos de la clase, eso resulta en una sobrecarga de métodos y consumo de recursos.
+con Prototype podemos crear un método que puede ser utilizado por todos los objetos que hereden de esta clase.
+Igualmente todo objeto en JS tiene un prototipo al cual se referencia. Ej una array tiene un prototipo que tiene métodos y ese método
+por ejemplo push() esta definido en el prototipo del array. JS va a buscar el método push() en el prototipo del array y
+ si no lo encuentra va a buscarlo en el prototipo del prototipo del array y así sucesivamente hasta que lo encuentre. Y de no existir
+ dará error.
+ Finalmente todo objeto tiente un prototipo, JS busca primero en el objeto que se está creando y si no lo encuentra va a buscarlo
+ al prototipo que le dio forma y sino en el prototipo del prototipo hasta llegar a Object que es el prototipo de todo objeto.
+ Y si allí no lo encuentra dara error.
+
+El constructor, como su nombre indica, es el código que construye y configura las propiedades y métodos de un objeto 
+cuando se crea con new.
+Las clases en definitiva son objetos que sirven de plantilla para otros objetos, por eso todas las clases tienen un constructor, 
+que es el que se ejecuta cuando se crea un objeto de la clase. El constructor es la primera línea de código que se ejecuta cuando
+ se crea un objeto de la clase. Es la plantilla para crear objetos. El constructor es una función del prototipo de la clase.
+
+
