@@ -1,0 +1,5 @@
+Funciones CallBacks: Un callback (llamada de vuelta) es una función que recibe como argumento otra función y la ejecuta. 
+Es importante tener en cuenta que cuando pasamos un callback solo pasamos la definición de la función y no la ejecutamos 
+en el parámetro. Así, la función contenedora elige cuándo ejecutar el callback.
+Los callbacks pueden ayudar a no repetir código y a su mantenimiento, a conseguir funciones más específicas y, en ciertos casos, 
+a mejorar el nivel de abstracción y la lectura del código.
