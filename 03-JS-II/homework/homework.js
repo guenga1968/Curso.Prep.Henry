@@ -5,12 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y){
+  if (x >= y){
     return x;
-  } else if (y > x){
+  } else {
     return y;
-  }else {
-    return x;
   }
 }
 
@@ -154,9 +152,9 @@ function operadoresLogicos(num1, num2, num3) {
       return "Hay negativos"
   } else if (num1 === 0 || num2 === 0 || num3 === 0){
       return "Error";
-  } else if (num1 > num2 && num1 > num3 && num1 >0){
+  } else if (num1 > num2 && num1 > num3){
       return "Número 1 es mayor y positivo";
-  }else if (num3 > num1 && num3 > num2 && num3 > 0){
+  }else if (num3 > num1 && num3 > num2 ){
       return num3 + 1;
   }else { 
       return false;
@@ -175,7 +173,6 @@ function esPrimo(numero) {
   if(numero === 2){
   return true; 
 }
-
   for(var i = 2; i < numero; i++) {
     if(numero % i === 0) {
       return false;
