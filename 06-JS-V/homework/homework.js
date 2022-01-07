@@ -13,10 +13,10 @@ function crearUsuario() {
       this.nombre = opciones.nombre;
       this.email = opciones.email;
       this.password = opciones.password;
-  }
+  };
     Usuario.prototype.saludar = function() {
       return 'Hola, mi nombre es ' + this.nombre; 
-  }  
+  }  ;
   return Usuario;
 }
 
@@ -26,7 +26,7 @@ function agregarMetodoPrototype(Constructor) {
   // Tu código:
   Constructor.prototype.saludar = function() {
     return "Hello World!"
-  }
+  };
 }
 
 function agregarStringInvertida() {
@@ -39,7 +39,7 @@ function agregarStringInvertida() {
   var invertida ='';
   for( i = this.length - 1; i >= 0 ; i++){
     invertida = invertida + this.charAt(i);
-  }
+  };
   return invertida;
 };
 }
@@ -61,16 +61,17 @@ function agregarStringInvertida() {
           this.apellido = apellido;
           this.edad = edad;
           this.domicilio = domicilio;
-      }
+      };
       detalle(){
         return {
           Nombre: this.nombre,
           Apellido: this.apellido,
           Edad: this.edad,
           Domicilio: this.domicilio
-        }
-      }
-  }
+        };
+      };
+    };
+  
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
@@ -85,7 +86,7 @@ function agregarMetodo() {
   //Ej: "Juan, 22 años"
   Persona.prototype.datos = function() {
     return this.nombre + ", " + edad + " años";
-  }
+  };
 }
   
 
