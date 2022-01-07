@@ -37,7 +37,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
- return array.push(elemento);
+  array.push(elemento);
+ return array;
+ 
 }
 
 
@@ -46,7 +48,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
- return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -56,11 +59,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase = ''
-  for (i = 0 ; i < palabras.length; i++){
-    frase = frase + palabras[i] + ' '
-}
-  return frase;
+  
+  return palabras.join(' ');
 }
 
 
@@ -104,7 +104,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  return Math.max(numeros);
+  return Math.max(...numeros);
 }
 
 
@@ -147,10 +147,10 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if(numeroDeDia === 1 || numeroDeDia === 7){
-    return "Es fin de semana"
+    return "Es fin de semana";
   }else {
-    return "Es día Laboral"
-  }
+    return "Es dia Laboral";
+  };
 } 
 
 
@@ -245,13 +245,11 @@ function continueStatement(numero) {
   // Tu código:
   var nuevoArray = [];
   for (i = 0 ; i < 10; i++){
-    numero = numero + 2;
    
-    if (i === 5){
-      continue;
-    }
+    if (i === 5) continue;
+    numero = numero + 2;
     nuevoArray.push(numero);
-  }
+  };
   return nuevoArray;
 }
 
